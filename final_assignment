@@ -1,0 +1,270 @@
+
+!pip install yfinance
+!pip install nbformat
+Requirement already satisfied: yfinance in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (0.2.21)
+Requirement already satisfied: lxml>=4.9.1 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from yfinance) (4.9.2)
+Requirement already satisfied: html5lib>=1.1 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from yfinance) (1.1)
+Requirement already satisfied: pandas>=1.3.0 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from yfinance) (2.0.1)
+Requirement already satisfied: appdirs>=1.4.4 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from yfinance) (1.4.4)
+Requirement already satisfied: multitasking>=0.0.7 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from yfinance) (0.0.11)
+Requirement already satisfied: numpy>=1.16.5 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from yfinance) (1.23.5)
+Requirement already satisfied: frozendict>=2.3.4 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from yfinance) (2.3.8)
+Requirement already satisfied: requests>=2.26 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from yfinance) (2.28.2)
+Requirement already satisfied: beautifulsoup4>=4.11.1 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from yfinance) (4.12.2)
+Requirement already satisfied: pytz>=2022.5 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from yfinance) (2023.3)
+Requirement already satisfied: soupsieve>1.2 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from beautifulsoup4>=4.11.1->yfinance) (2.4.1)
+Requirement already satisfied: webencodings in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from html5lib>=1.1->yfinance) (0.5.1)
+Requirement already satisfied: six>=1.9 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from html5lib>=1.1->yfinance) (1.16.0)
+Requirement already satisfied: tzdata>=2022.1 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from pandas>=1.3.0->yfinance) (2023.3)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from pandas>=1.3.0->yfinance) (2.8.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from requests>=2.26->yfinance) (3.0.1)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from requests>=2.26->yfinance) (2022.12.7)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from requests>=2.26->yfinance) (1.26.14)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from requests>=2.26->yfinance) (3.4)
+[notice] A new release of pip is available: 23.0.1 -> 23.1.2
+[notice] To update, run: C:\Users\tjwod\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+Requirement already satisfied: nbformat in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (5.9.0)
+Requirement already satisfied: jsonschema>=2.6 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from nbformat) (4.17.3)
+Requirement already satisfied: jupyter-core in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from nbformat) (5.3.0)
+Requirement already satisfied: fastjsonschema in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from nbformat) (2.17.1)
+Requirement already satisfied: traitlets>=5.1 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from nbformat) (5.9.0)
+Requirement already satisfied: attrs>=17.4.0 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from jsonschema>=2.6->nbformat) (23.1.0)
+Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from jsonschema>=2.6->nbformat) (0.19.3)
+Requirement already satisfied: platformdirs>=2.5 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from jupyter-core->nbformat) (3.5.1)
+Requirement already satisfied: pywin32>=300 in c:\users\tjwod\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from jupyter-core->nbformat) (306)
+[notice] A new release of pip is available: 23.0.1 -> 23.1.2
+[notice] To update, run: C:\Users\tjwod\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+import yfinance as yf
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+import plotly.offline as pyo
+def make_graph(stock_data, revenue_data, stock):
+    fig = make_subplots(rows=2, cols=1, shared_xaxes=True, subplot_titles=("Historical Share Price", "Historical Revenue"), vertical_spacing = .3)
+    fig.add_trace(go.Scatter(x=pd.to_datetime(stock_data.Date, infer_datetime_format=True), y=stock_data.Close.astype("float"), name="Share Price"), row=1, col=1)
+    fig.add_trace(go.Scatter(x=pd.to_datetime(revenue_data.Date, infer_datetime_format=True), y=revenue_data.Revenue.astype("float"), name="Revenue"), row=2, col=1)
+    fig.update_xaxes(title_text="Date", row=1, col=1)
+    fig.update_xaxes(title_text="Date", row=2, col=1)
+    fig.update_yaxes(title_text="Price ($US)", row=1, col=1)
+    fig.update_yaxes(title_text="Revenue ($US Millions)", row=2, col=1)
+    fig.update_layout(showlegend=False,
+    height=900,
+    title=stock,
+    xaxis_rangeslider_visible=True)
+    fig.show()
+tesla=yf.Ticker("TSLA")
+tesla_data=tesla.history(period="max")
+tesla_data.reset_index(inplace=True)
+tesla_data.head()
+Date	Open	High	Low	Close	Volume	Dividends	Stock Splits
+0	2010-06-29 00:00:00-04:00	1.266667	1.666667	1.169333	1.592667	281494500	0.0	0.0
+1	2010-06-30 00:00:00-04:00	1.719333	2.028000	1.553333	1.588667	257806500	0.0	0.0
+2	2010-07-01 00:00:00-04:00	1.666667	1.728000	1.351333	1.464000	123282000	0.0	0.0
+3	2010-07-02 00:00:00-04:00	1.533333	1.540000	1.247333	1.280000	77097000	0.0	0.0
+4	2010-07-06 00:00:00-04:00	1.333333	1.333333	1.055333	1.074000	103003500	0.0	0.0
+url="https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue."
+html_data=requests.get(url).text
+beautiful_soup=BeautifulSoup(html_data, "html5lib")
+tables=beautiful_soup.find_all("table")
+for index,table in enumerate(tables):
+    if("Tesla Quarterly Revenue" in str(table)):
+        table_index=index
+tesla_revenue=pd.DataFrame(columns=["Date","Revenue"])
+
+for row in tables[table_index].tbody.find_all('tr'):
+    col = row.find_all("td")
+    if col:
+        date = col[0].text
+        revenue = col[1].text.strip().replace("$", "").replace(",", "")
+        tesla_revenue = pd.concat([tesla_revenue, pd.DataFrame({"Date": [date], "Revenue": [revenue]})], ignore_index=True)
+
+tesla_revenue.head()
+Date	Revenue
+0	2023-03-31	23329
+1	2022-12-31	24318
+2	2022-09-30	21454
+3	2022-06-30	16934
+4	2022-03-31	18756
+print(tesla_revenue)
+
+tesla_revenue.dropna(inplace=True)
+not_empty=tesla_revenue["Revenue"]!=""
+tesla_revenue=tesla_revenue[not_empty]
+          Date Revenue
+0   2023-03-31   23329
+1   2022-12-31   24318
+2   2022-09-30   21454
+3   2022-06-30   16934
+4   2022-03-31   18756
+5   2021-12-31   17719
+6   2021-09-30   13757
+7   2021-06-30   11958
+8   2021-03-31   10389
+9   2020-12-31   10744
+10  2020-09-30    8771
+11  2020-06-30    6036
+12  2020-03-31    5985
+13  2019-12-31    7384
+14  2019-09-30    6303
+15  2019-06-30    6350
+16  2019-03-31    4541
+17  2018-12-31    7226
+18  2018-09-30    6824
+19  2018-06-30    4002
+20  2018-03-31    3409
+21  2017-12-31    3288
+22  2017-09-30    2985
+23  2017-06-30    2790
+24  2017-03-31    2696
+25  2016-12-31    2285
+26  2016-09-30    2298
+27  2016-06-30    1270
+28  2016-03-31    1147
+29  2015-12-31    1214
+30  2015-09-30     937
+31  2015-06-30     955
+32  2015-03-31     940
+33  2014-12-31     957
+34  2014-09-30     852
+35  2014-06-30     769
+36  2014-03-31     621
+37  2013-12-31     615
+38  2013-09-30     431
+39  2013-06-30     405
+40  2013-03-31     562
+41  2012-12-31     306
+42  2012-09-30      50
+43  2012-06-30      27
+44  2012-03-31      30
+45  2011-12-31      39
+46  2011-09-30      58
+47  2011-06-30      58
+48  2011-03-31      49
+49  2010-12-31      36
+50  2010-09-30      31
+51  2010-06-30      28
+52  2010-03-31      21
+53  2009-12-31        
+54  2009-09-30      46
+55  2009-06-30      27
+tesla_revenue.tail()
+Date	Revenue
+50	2010-09-30	31
+51	2010-06-30	28
+52	2010-03-31	21
+54	2009-09-30	46
+55	2009-06-30	27
+gmestop=yf.Ticker("GME")
+gme_data=gmestop.history(period="max")
+gme_data.reset_index(inplace=True)
+gme_data.head()
+Date	Open	High	Low	Close	Volume	Dividends	Stock Splits
+0	2002-02-13 00:00:00-05:00	1.620129	1.693350	1.603296	1.691667	76216000	0.0	0.0
+1	2002-02-14 00:00:00-05:00	1.712707	1.716074	1.670626	1.683250	11021600	0.0	0.0
+2	2002-02-15 00:00:00-05:00	1.683250	1.687458	1.658001	1.674834	8389600	0.0	0.0
+3	2002-02-19 00:00:00-05:00	1.666417	1.666417	1.578047	1.607504	7410400	0.0	0.0
+4	2002-02-20 00:00:00-05:00	1.615921	1.662210	1.603296	1.662210	6892800	0.0	0.0
+url="https://www.macrotrends.net/stocks/charts/GME/gamestop/revenue."
+html_data=requests.get(url).text
+
+beautiful_soup=BeautifulSoup(html_data,"html.parser")
+
+tables=beautiful_soup.find_all("table")
+for index,table in enumerate(tables):
+    if(str(table)=="GameStop Quarterly Revenue"):
+        table_index=index
+
+gme_revenue=pd.DataFrame(columns=["Date","Revenue"])
+
+for row in tables[table_index].tbody.find_all('tr'):
+    col = row.find_all("td")
+    if col:
+        date = col[0].text
+        revenue=col[1].text.strip().replace("$","").replace(",","")
+        gme_revenue=pd.concat([gme_revenue, pd.DataFrame({"Date":[date],"Revenue":[revenue]})], ignore_index=True)
+gme_revenue.head()
+
+gme_revenue.tail()
+Date	Revenue
+53	2010-01-31	3524
+54	2009-10-31	1835
+55	2009-07-31	1739
+56	2009-04-30	1981
+57	2009-01-31	3492
+import plotly.graph_objects as go
+from IPython.display import display
+
+def make_graph(stock_data, revenue_data, stock):
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=stock_data['Date'], y=stock_data['Close'], name='Stock Price'))
+    fig.add_trace(go.Scatter(x=revenue_data['Date'], y=revenue_data['Revenue'], name='Revenue', yaxis='y2'))
+    
+    fig.update_layout(
+        title=stock,
+        xaxis_title='Date',
+        yaxis=dict(title='Stock Price'),
+        yaxis2=dict(title='Revenue ($US Millions)', overlaying='y', side='right'),
+        showlegend=True,
+        height=600
+    )
+    
+    display(fig)
+
+make_graph(tesla_data, tesla_revenue, 'Tesla')
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+File ~\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\IPython\core\formatters.py:922, in IPythonDisplayFormatter.__call__(self, obj)
+    920 method = get_real_method(obj, self.print_method)
+    921 if method is not None:
+--> 922     method()
+    923     return True
+
+File ~\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\plotly\basedatatypes.py:834, in BaseFigure._ipython_display_(self)
+    831 import plotly.io as pio
+    833 if pio.renderers.render_on_display and pio.renderers.default:
+--> 834     pio.show(self)
+    835 else:
+    836     print(repr(self))
+
+File ~\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\plotly\io\_renderers.py:396, in show(fig, renderer, validate, **kwargs)
+    391         raise ValueError(
+    392             "Mime type rendering requires ipython but it is not installed"
+    393         )
+    395     if not nbformat or Version(nbformat.__version__) < Version("4.2.0"):
+--> 396         raise ValueError(
+    397             "Mime type rendering requires nbformat>=4.2.0 but it is not installed"
+    398         )
+    400     ipython_display.display(bundle, raw=True)
+    402 # external renderers
+
+ValueError: Mime type rendering requires nbformat>=4.2.0 but it is not installed
+make_graph(gme_data, gme_revenue, 'GameStop')
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+File ~\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\IPython\core\formatters.py:922, in IPythonDisplayFormatter.__call__(self, obj)
+    920 method = get_real_method(obj, self.print_method)
+    921 if method is not None:
+--> 922     method()
+    923     return True
+
+File ~\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\plotly\basedatatypes.py:834, in BaseFigure._ipython_display_(self)
+    831 import plotly.io as pio
+    833 if pio.renderers.render_on_display and pio.renderers.default:
+--> 834     pio.show(self)
+    835 else:
+    836     print(repr(self))
+
+File ~\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\plotly\io\_renderers.py:396, in show(fig, renderer, validate, **kwargs)
+    391         raise ValueError(
+    392             "Mime type rendering requires ipython but it is not installed"
+    393         )
+    395     if not nbformat or Version(nbformat.__version__) < Version("4.2.0"):
+--> 396         raise ValueError(
+    397             "Mime type rendering requires nbformat>=4.2.0 but it is not installed"
+    398         )
+    400     ipython_display.display(bundle, raw=True)
+    402 # external renderers
+
+ValueError: Mime type rendering requires nbformat>=4.2.0 but it is not installed
